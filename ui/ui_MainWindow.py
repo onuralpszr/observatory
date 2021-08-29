@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MainWindowAFlZIh.ui'
+## Form generated from reading UI file 'MainWindowrWTUJA.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1000, 672)
+        MainWindow.resize(1164, 650)
         MainWindow.setMinimumSize(QSize(1000, 650))
         self.actionFile = QAction(MainWindow)
         self.actionFile.setObjectName(u"actionFile")
@@ -35,10 +35,20 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout_3 = QVBoxLayout(self.centralwidget)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.verticalLayout = QVBoxLayout()
-        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.image_frame = QLabel(self.centralwidget)
+        self.image_frame.setObjectName(u"image_frame")
 
-        self.verticalLayout_3.addLayout(self.verticalLayout)
+        self.horizontalLayout.addWidget(self.image_frame)
+
+        self.image_frame_after = QLabel(self.centralwidget)
+        self.image_frame_after.setObjectName(u"image_frame_after")
+
+        self.horizontalLayout.addWidget(self.image_frame_after)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(MainWindow)
@@ -57,5 +67,7 @@ class Ui_MainWindow(object):
         self.actionSaveAs.setText(QCoreApplication.translate("MainWindow", u"Farkl\u0131 Kaydet", None))
         self.actionClose.setText(QCoreApplication.translate("MainWindow", u"Dosya Kapat", None))
         self.actionNew.setText(QCoreApplication.translate("MainWindow", u"Yeni Dosya", None))
+        self.image_frame.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.image_frame_after.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
     # retranslateUi
 
