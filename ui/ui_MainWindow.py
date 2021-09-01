@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MainWindowrWTUJA.ui'
+## Form generated from reading UI file 'MainWindowOWisXG.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -31,6 +31,8 @@ class Ui_MainWindow(object):
         self.actionClose.setObjectName(u"actionClose")
         self.actionNew = QAction(MainWindow)
         self.actionNew.setObjectName(u"actionNew")
+        self.actionOpen_File = QAction(MainWindow)
+        self.actionOpen_File.setObjectName(u"actionOpen_File")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout_3 = QVBoxLayout(self.centralwidget)
@@ -54,6 +56,15 @@ class Ui_MainWindow(object):
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
         MainWindow.setStatusBar(self.statusbar)
+        self.menuBar = QMenuBar(MainWindow)
+        self.menuBar.setObjectName(u"menuBar")
+        self.menuBar.setGeometry(QRect(0, 0, 1164, 30))
+        self.menuOpen_File = QMenu(self.menuBar)
+        self.menuOpen_File.setObjectName(u"menuOpen_File")
+        MainWindow.setMenuBar(self.menuBar)
+
+        self.menuBar.addAction(self.menuOpen_File.menuAction())
+        self.menuOpen_File.addAction(self.actionOpen_File)
 
         self.retranslateUi(MainWindow)
 
@@ -67,7 +78,9 @@ class Ui_MainWindow(object):
         self.actionSaveAs.setText(QCoreApplication.translate("MainWindow", u"Farkl\u0131 Kaydet", None))
         self.actionClose.setText(QCoreApplication.translate("MainWindow", u"Dosya Kapat", None))
         self.actionNew.setText(QCoreApplication.translate("MainWindow", u"Yeni Dosya", None))
+        self.actionOpen_File.setText(QCoreApplication.translate("MainWindow", u"Open File", None))
         self.image_frame.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.image_frame_after.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.menuOpen_File.setTitle(QCoreApplication.translate("MainWindow", u"File", None))
     # retranslateUi
 
