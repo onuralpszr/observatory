@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MainWindowOWisXG.ui'
+## Form generated from reading UI file 'MainWindowcPhBay.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -42,12 +42,12 @@ class Ui_MainWindow(object):
         self.image_frame = QLabel(self.centralwidget)
         self.image_frame.setObjectName(u"image_frame")
 
-        self.horizontalLayout.addWidget(self.image_frame)
+        self.horizontalLayout.addWidget(self.image_frame, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.image_frame_after = QLabel(self.centralwidget)
         self.image_frame_after.setObjectName(u"image_frame_after")
 
-        self.horizontalLayout.addWidget(self.image_frame_after)
+        self.horizontalLayout.addWidget(self.image_frame_after, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
 
         self.verticalLayout_3.addLayout(self.horizontalLayout)
