@@ -17,6 +17,9 @@ class Observatory(QMainWindow):
         self.ui.setupUi(self)
         self.ui.menuOpen_File.triggered.connect(self.image_select)
         self.ui.menuBar.setNativeMenuBar(False)
+        self.ui.image_frame.setText("")
+        self.ui.image_frame_after.setText("")
+
 
     def image_select(self) -> None:
         image_filename, _ = QFileDialog.getOpenFileName(self, self.tr("Load Image"), self.tr("~/"),
@@ -37,4 +40,3 @@ class Observatory(QMainWindow):
         self.image = QtGui.QImage(self.img.data, self.img.shape[1], self.img.shape[0],
                                   QtGui.QImage.Format_Grayscale8).rgbSwapped()
         self.ui.image_frame_after.setPixmap(QtGui.QPixmap.fromImage(self.image))
-
